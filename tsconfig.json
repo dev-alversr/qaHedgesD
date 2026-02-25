@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Runtime target */
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+
+    /* Module system (Playwright on Node) */
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    /* Type safety */
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* JSON imports + interop */
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
+    /* Source / output */
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/pages/*"],
+      "@components/*": ["src/components/*"],
+      "@flows/*": ["src/flows/*"],
+      "@utils/*": ["src/utils/*"],
+      "@assertions/*": ["src/assertions/*"],
+      "@models/*": ["src/models/*"],
+      "@locators/*": ["src/locators/*"],
+      "@fixtures/*": ["src/fixtures/*"],
+      "@test-data/*": ["test-data/*"]
+    },
+
+    /* Playwright + Node types */
+    "types": ["node", "@playwright/test"]
+  },
+
+  "include": ["src/**/*.ts", "tests/**/*.ts", "playwright.config.ts", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "dist", "reports", "test-results"]
+}

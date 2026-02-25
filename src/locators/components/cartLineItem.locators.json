@@ -1,0 +1,40 @@
+{
+  "cartLineItem": {
+    "root": {
+      "primary": "xpath=//*[contains(.,'Quantity')]/ancestor::*[self::li or self::div][1]",
+      "fallbacks": ["css=li", "css=div"]
+    },
+    "name": {
+      "primary": "xpath=.//a[normalize-space(.)!=''][1]",
+      "fallbacks": ["xpath=.//*[self::strong or self::span][normalize-space(.)!=''][1]"]
+    },
+    "unitPrice": {
+      "primary": "xpath=.//*[contains(.,'Now:')]/following::*[contains(.,'£')][1]",
+      "fallbacks": ["xpath=.//*[contains(.,'£')][1]"]
+    },
+    "qtyMinus": {
+      "primary": "xpath=.//*[contains(.,'Quantity')]/following::*[contains(.,'-')][1]",
+      "fallbacks": ["css=button:has-text('-')"]
+    },
+    "qtyPlus": {
+      "primary": "xpath=.//*[contains(.,'Quantity')]/following::*[contains(.,'+')][1]",
+      "fallbacks": ["css=button:has-text('+')"]
+    },
+    "qtyInput": {
+      "primary": "xpath=.//input[contains(@name,'qty') or @type='number'][1]",
+      "fallbacks": ["css=input[type='number']", "css=input[name*='qty']"]
+    },
+    "lineSubtotal": {
+      "primary": "xpath=.//*[contains(.,'£')][last()]",
+      "fallbacks": ["xpath=.//*[contains(.,'£')][2]"]
+    },
+    "editBtn": {
+      "primary": "text=Edit",
+      "fallbacks": ["role=button[name='Edit']"]
+    },
+    "removeBtn": {
+      "primary": "text=trash",
+      "fallbacks": ["role=button[name=/Remove|Delete/i]", "css=button:has-text('Remove')"]
+    }
+  }
+}

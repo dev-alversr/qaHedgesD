@@ -1,0 +1,35 @@
+{
+  "login": {
+    "email": {
+      "primary": "label=Email",
+      "fallbacks": [
+        "label=Email Address",
+        "css=input#email",
+        "css=input[type='email']",
+        "xpath=//input[contains(@name,'login') or contains(@id,'email')][1]"
+      ]
+    },
+    "password": {
+      "primary": "label=Password",
+      "fallbacks": [
+        "css=input#pass",
+        "css=input[type='password']",
+        "xpath=//input[contains(@name,'pass') or contains(@id,'pass')][1]"
+      ]
+    },
+    "signIn": {
+      "primary": "role=button[name=/Sign In|Login/i]",
+      "fallbacks": [
+        "css=button[type='submit']",
+        "text=Sign In",
+        "text=Login"
+      ]
+    },
+    "error": {
+      "primary": "css=.message-error, css=.alert-danger, css=.mage-error",
+      "fallbacks": [
+        "xpath=//*[@role='alert' or contains(@class,'error')][1]"
+      ]
+    }
+  }
+}

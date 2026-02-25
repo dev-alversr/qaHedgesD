@@ -1,0 +1,41 @@
+{
+  "page": {
+    "title": {
+      "primary": "css=h1"
+    }
+  },
+  "listing": {
+    "resultsCount": {
+      "primary": "text=/Items\\s+\\d+-\\d+\\s+of\\s+\\d+/i",
+      "fallbacks": ["xpath=//*[contains(normalize-space(.),'Items') and contains(normalize-space(.),'of')]"]
+    },
+    "filterToggle": {
+      "primary": "role=button[name='Filter']",
+      "fallbacks": ["text=Filter"]
+    },
+    "compareBar": {
+      "primary": "text=Compare Products",
+      "fallbacks": ["xpath=//*[contains(.,'Compare Products')]"]
+    },
+    "pagination": {
+      "pageLinkByNumber": {
+        "primary": "xpath=//a[contains(@aria-label,'Page') and contains(.,'{{page}}')]",
+        "fallbacks": ["xpath=//a[normalize-space(.)='{{page}}']"]
+      },
+      "next": {
+        "primary": "text=chevron-right",
+        "fallbacks": ["xpath=//*[contains(@class,'next') or contains(.,'Next')]"]
+      },
+      "prev": {
+        "primary": "text=chevron-left",
+        "fallbacks": ["xpath=//*[contains(@class,'prev') or contains(.,'Previous')]"]
+      }
+    },
+    "sort": {
+      "dropdown": {
+        "primary": "xpath=//label[contains(.,'Sort')]/following::*[self::select or self::div][1]",
+        "fallbacks": ["css=select#sorter", "css=select[name='product_list_order']"]
+      }
+    }
+  }
+}

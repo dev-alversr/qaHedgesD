@@ -1,0 +1,22 @@
+{
+  "cookieBanner": {
+    "modal": {
+      "primary": "xpath=//button[normalize-space(.)='Accept All Cookies']/ancestor::*[self::div or self::section][1]",
+      "fallbacks": ["role=dialog"]
+    },
+    "acceptAll": {
+      "primary": "role=button[name='Accept All Cookies']",
+      "fallbacks": [
+        "text=Accept All Cookies",
+        "xpath=//button[normalize-space(.)='Accept All Cookies']"
+      ]
+    },
+    "settings": {
+      "primary": "role=button[name='Cookies Settings']",
+      "fallbacks": [
+        "text=Cookies Settings",
+        "xpath=//button[normalize-space(.)='Cookies Settings']"
+      ]
+    }
+  }
+}

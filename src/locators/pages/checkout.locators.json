@@ -1,0 +1,81 @@
+{
+  "checkout": {
+    "header": {
+      "primary": "text=/Checkout/i",
+      "fallbacks": ["css=h1", "xpath=//*[self::h1 or self::h2][contains(.,'Checkout')]"]
+    },
+
+    "authPanel": {
+      "title": {
+        "primary": "text=/Checkout using your account/i",
+        "fallbacks": ["xpath=//*[contains(.,'Checkout using your account')]"]
+      },
+      "email": {
+        "primary": "xpath=//label[contains(.,'Email')]/following::input[1]",
+        "fallbacks": ["css=input[type='email']", "xpath=//input[contains(@name,'username') or contains(@name,'email')][1]"]
+      },
+      "password": {
+        "primary": "xpath=//label[contains(.,'Password')]/following::input[1]",
+        "fallbacks": ["css=input[type='password']"]
+      },
+      "signIn": {
+        "primary": "role=button[name='Sign In']",
+        "fallbacks": ["text=Sign In"]
+      },
+      "forgotPassword": {
+        "primary": "role=link[name='Forgot Your Password?']",
+        "fallbacks": ["text=Forgot Your Password?"]
+      },
+      "guestCheckoutTitle": {
+        "primary": "text=/Checkout as a new customer/i",
+        "fallbacks": ["xpath=//*[contains(.,'new customer')]"]
+      }
+    },
+
+    "shipping": {
+      "email": {
+        "primary": "label=Email",
+        "fallbacks": ["css=input[type='email']"]
+      },
+      "firstName": {
+        "primary": "label=First Name",
+        "fallbacks": ["xpath=//input[contains(@name,'firstname') or contains(@id,'firstname')][1]"]
+      },
+      "lastName": {
+        "primary": "label=Surname",
+        "fallbacks": ["label=Last Name", "xpath=//input[contains(@name,'lastname') or contains(@id,'lastname')][1]"]
+      },
+      "address1": {
+        "primary": "label=Address Line 1",
+        "fallbacks": ["label=Street Address", "xpath=//input[contains(@name,'street')][1]"]
+      },
+      "city": {
+        "primary": "label=City",
+        "fallbacks": ["xpath=//input[contains(@name,'city') or contains(@id,'city')][1]"]
+      },
+      "county": {
+        "primary": "label=County",
+        "fallbacks": ["xpath=//input[contains(@name,'region') or contains(@id,'region')][1]"]
+      },
+      "postcode": {
+        "primary": "label=Postcode",
+        "fallbacks": ["label=Zip/Postal Code", "xpath=//input[contains(@name,'postcode') or contains(@id,'postcode')][1]"]
+      },
+      "phone": {
+        "primary": "label=Phone",
+        "fallbacks": ["label=Telephone", "xpath=//input[contains(@name,'telephone') or contains(@id,'telephone')][1]"]
+      }
+    },
+
+    "actions": {
+      "continue": {
+        "primary": "role=button[name=/Continue|Next/i]",
+        "fallbacks": ["css=button:has-text('Continue')", "css=button:has-text('Next')"]
+      },
+      "placeOrder": {
+        "primary": "role=button[name=/Place Order|Pay Now|Complete Order/i]",
+        "fallbacks": ["css=button:has-text('Place')", "css=button:has-text('Pay')"]
+      }
+    }
+  }
+}

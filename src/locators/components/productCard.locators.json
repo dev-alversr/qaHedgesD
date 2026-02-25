@@ -1,0 +1,28 @@
+{
+  "productCard": {
+    "root": {
+      "primary": "css=li:has(button:has-text('Add to Cart'))",
+      "fallbacks": ["css=li:has-text('Add to Cart')", "css=div:has(button:has-text('Add to Cart'))"]
+    },
+    "nameLink": {
+      "primary": "css=a:has-text('Hedge')",
+      "fallbacks": ["xpath=.//a[normalize-space(.)!=''][1]"]
+    },
+    "priceText": {
+      "primary": "xpath=.//*[contains(.,'£')][1]",
+      "fallbacks": ["css=.price", "css=.price-box .price"]
+    },
+    "addToCartBtn": {
+      "primary": "role=button[name='Add to Cart']",
+      "fallbacks": ["text=Add to Cart", "role=button[name='Add to Basket']", "text=Add to Basket"]
+    },
+    "wishlistBtn": {
+      "primary": "css=button[aria-label*='Wish']",
+      "fallbacks": ["text=My Wish List", "css=button:has-text('Wish')"]
+    },
+    "compareBtn": {
+      "primary": "css=button[aria-label*='Compare']",
+      "fallbacks": ["css=a[aria-label*='Compare']", "text=Compare"]
+    }
+  }
+}

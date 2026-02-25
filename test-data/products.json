@@ -1,0 +1,12 @@
+{
+  "in_stock_example": {
+    "name": "Example In-Stock Product",
+    "expectedMinPrice": 1.0,
+    "expectedMaxPrice": 9999.99,
+    "quantityMin": 1,
+    "quantityMax": 999
+  },
+  "out_of_stock_example": {
+    "name": "Example Out-Of-Stock Product"
+  }
+}

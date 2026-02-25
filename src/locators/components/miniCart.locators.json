@@ -1,0 +1,36 @@
+{
+  "miniCart": {
+    "panelTitle": {
+      "primary": "text=/Basket/i",
+      "fallbacks": ["xpath=//*[self::h2 or self::h3][contains(.,'Basket')]"]
+    },
+    "closeBtn": {
+      "primary": "text=x",
+      "fallbacks": ["css=button[aria-label*='Close']", "xpath=//*[contains(@class,'close')][1]"]
+    },
+    "continueToCheckout": {
+      "primary": "text=Continue To Checkout",
+      "fallbacks": ["role=button[name='Continue To Checkout']", "text=Go to Checkout"]
+    },
+    "viewEditBasket": {
+      "primary": "text=/View\\s*&\\s*edit basket/i",
+      "fallbacks": ["text=View & edit basket"]
+    },
+    "saveBasketForLater": {
+      "primary": "text=/Save Basket for later/i",
+      "fallbacks": ["text=Save Basket for later"]
+    },
+    "discountLabel": {
+      "primary": "text=/Discount:/i",
+      "fallbacks": ["xpath=//*[contains(.,'Discount:')]"]
+    },
+    "totalExDeliveryLabel": {
+      "primary": "text=/Total \\(exc delivery\\):/i",
+      "fallbacks": ["xpath=//*[contains(.,'Total (exc delivery)')]"]
+    },
+    "buyWith": {
+      "primary": "text=/Buy with/i",
+      "fallbacks": ["xpath=//*[contains(.,'Buy with')]"]
+    }
+  }
+}

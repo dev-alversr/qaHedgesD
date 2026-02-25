@@ -1,0 +1,89 @@
+{
+  "common": {
+    "buttons": {
+      "continue": {
+        "primary": "role=button[name=/Continue|Next/i]",
+        "fallbacks": ["css=button:has-text('Continue')", "css=button:has-text('Next')"]
+      },
+      "submit": {
+        "primary": "role=button[name=/Submit|Send|Confirm/i]",
+        "fallbacks": ["css=button[type='submit']", "css=button:has-text('Submit')"]
+      },
+      "save": {
+        "primary": "role=button[name=/Save/i]",
+        "fallbacks": ["css=button:has-text('Save')"]
+      },
+      "cancel": {
+        "primary": "role=button[name=/Cancel|Close|No/i]",
+        "fallbacks": ["css=button:has-text('Cancel')", "css=button[aria-label*='Close']"]
+      },
+      "ok": {
+        "primary": "role=button[name=/OK|Okay|Yes/i]",
+        "fallbacks": ["css=button:has-text('OK')", "css=button:has-text('Yes')"]
+      }
+    },
+
+    "dialogs": {
+      "root": {
+        "primary": "role=dialog",
+        "fallbacks": ["css=[role='dialog']", "css=.modal, css=.dialog"]
+      },
+      "title": {
+        "primary": "role=dialog >> css=h1, role=dialog >> css=h2, role=dialog >> css=h3",
+        "fallbacks": ["css=.modal-title", "xpath=//*[@role='dialog']//*[self::h1 or self::h2 or self::h3][1]"]
+      },
+      "body": {
+        "primary": "role=dialog >> css=.modal-body",
+        "fallbacks": ["xpath=//*[@role='dialog']//*[contains(@class,'body') or contains(@class,'content')][1]"]
+      }
+    },
+
+    "messages": {
+      "success": {
+        "primary": "css=.message-success, css=.alert-success",
+        "fallbacks": ["xpath=//*[contains(@class,'success') and (self::div or self::p)]"]
+      },
+      "error": {
+        "primary": "css=.message-error, css=.alert-danger, css=.mage-error",
+        "fallbacks": ["xpath=//*[contains(@class,'error') and (self::div or self::p)]"]
+      },
+      "warning": {
+        "primary": "css=.message-warning, css=.alert-warning",
+        "fallbacks": ["xpath=//*[contains(@class,'warning') and (self::div or self::p)]"]
+      }
+    },
+
+    "inputs": {
+      "email": {
+        "primary": "css=input[type='email']",
+        "fallbacks": ["xpath=//input[contains(@name,'email') or contains(@id,'email')][1]"]
+      },
+      "password": {
+        "primary": "css=input[type='password']",
+        "fallbacks": ["xpath=//input[contains(@name,'pass') or contains(@id,'pass')][1]"]
+      },
+      "search": {
+        "primary": "role=searchbox",
+        "fallbacks": ["css=input[type='search']", "css=input[name='q']"]
+      }
+    },
+
+    "loading": {
+      "spinner": {
+        "primary": "css=.loading-mask, css=.spinner, css=.loader",
+        "fallbacks": ["xpath=//*[contains(@class,'loading') or contains(@class,'spinner') or contains(@class,'loader')]"]
+      },
+      "skeleton": {
+        "primary": "css=.skeleton, css=[aria-busy='true']",
+        "fallbacks": ["xpath=//*[@aria-busy='true']"]
+      }
+    },
+
+    "navigation": {
+      "breadcrumb": {
+        "primary": "css=.breadcrumbs",
+        "fallbacks": ["xpath=//*[contains(@class,'breadcrumb') or contains(@class,'breadcrumbs')]"]
+      }
+    }
+  }
+}
