@@ -1,0 +1,42 @@
+{
+  "cart": {
+    "pageTitle": {
+      "primary": "text=/Basket|Cart/i",
+      "fallbacks": ["css=h1", "xpath=//*[self::h1 or self::h2][contains(.,'Basket') or contains(.,'Cart')]"]
+    },
+    "continueToCheckout": {
+      "primary": "role=button[name='Continue To Checkout']",
+      "fallbacks": ["text=Continue To Checkout", "text=Go to Checkout"]
+    },
+    "viewAndEditBasket": {
+      "primary": "text=/View\\s*&\\s*edit basket/i",
+      "fallbacks": ["xpath=//*[contains(.,'View') and contains(.,'edit') and contains(.,'basket')]"]
+    },
+    "saveBasketForLater": {
+      "primary": "text=/Save Basket for later/i",
+      "fallbacks": ["xpath=//*[contains(.,'Save Basket') and contains(.,'later')]"]
+    },
+    "saveBasketModal": {
+      "title": {
+        "primary": "text=/Do you wish to name your saved basket/i",
+        "fallbacks": ["xpath=//*[contains(.,'name your saved basket')]"]
+      },
+      "nameInput": {
+        "primary": "css=input[type='text']",
+        "fallbacks": ["xpath=//input[@type='text' and not(@disabled)][1]"]
+      },
+      "uniqueHint": {
+        "primary": "text=/Must be unique/i",
+        "fallbacks": ["xpath=//*[contains(.,'Must be unique')]"]
+      },
+      "saveBtn": {
+        "primary": "role=button[name='Save']",
+        "fallbacks": ["text=Save"]
+      },
+      "noBtn": {
+        "primary": "role=button[name='No']",
+        "fallbacks": ["text=No"]
+      }
+    }
+  }
+}

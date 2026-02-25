@@ -1,0 +1,120 @@
+<testsuites id="" name="" tests="5" failures="5" skipped="0" errors="0" time="1.8969810000000003">
+<testsuite name="cart\cart.add.validate-item-price-subtotal.spec.ts" timestamp="2026-02-25T10:34:12.996Z" hostname="chromium-registered" tests="1" failures="1" skipped="0" time="0.004" errors="0">
+<testcase name="Cart - Add Item &amp; Validate Pricing › Add product and validate item, unit price and subtotal" classname="cart\cart.add.validate-item-price-subtotal.spec.ts" time="0.004">
+<failure message="cart.add.validate-item-price-subtotal.spec.ts:10:7 Add product and validate item, unit price and subtotal" type="FAILURE">
+<![CDATA[  [chromium-registered] › cart\cart.add.validate-item-price-subtotal.spec.ts:10:7 › Cart - Add Item & Validate Pricing › Add product and validate item, unit price and subtotal 
+
+    Error: Error reading storage state from C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json:
+    ENOENT: no such file or directory, open 'C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\cart-cart.add.validate-ite-08a56-tem-unit-price-and-subtotal-chromium-registered\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\cart-cart.add.validate-ite-08a56-tem-unit-price-and-subtotal-chromium-registered\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\cart-cart.add.validate-ite-08a56-tem-unit-price-and-subtotal-chromium-registered\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="cart\cart.subtotal.recalc.spec.ts" timestamp="2026-02-25T10:34:12.996Z" hostname="chromium-registered" tests="1" failures="1" skipped="0" time="0.004" errors="0">
+<testcase name="Cart - Subtotal Recalculation › Updating quantity recalculates subtotal correctly" classname="cart\cart.subtotal.recalc.spec.ts" time="0.004">
+<failure message="cart.subtotal.recalc.spec.ts:7:7 Updating quantity recalculates subtotal correctly" type="FAILURE">
+<![CDATA[  [chromium-registered] › cart\cart.subtotal.recalc.spec.ts:7:7 › Cart - Subtotal Recalculation › Updating quantity recalculates subtotal correctly 
+
+    Error: Error reading storage state from C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json:
+    ENOENT: no such file or directory, open 'C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\cart-cart.subtotal.recalc--496fd-lculates-subtotal-correctly-chromium-registered\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\cart-cart.subtotal.recalc--496fd-lculates-subtotal-correctly-chromium-registered\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\cart-cart.subtotal.recalc--496fd-lculates-subtotal-correctly-chromium-registered\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="checkout\checkout.registered.happy.spec.ts" timestamp="2026-02-25T10:34:12.996Z" hostname="chromium-registered" tests="1" failures="1" skipped="0" time="0.003" errors="0">
+<testcase name="Checkout - Registered Happy Path › Registered user completes checkout pricing validation" classname="checkout\checkout.registered.happy.spec.ts" time="0.003">
+<failure message="checkout.registered.happy.spec.ts:7:7 Registered user completes checkout pricing validation" type="FAILURE">
+<![CDATA[  [chromium-registered] › checkout\checkout.registered.happy.spec.ts:7:7 › Checkout - Registered Happy Path › Registered user completes checkout pricing validation 
+
+    Error: Error reading storage state from C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json:
+    ENOENT: no such file or directory, open 'C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\checkout-checkout.register-5e03c-checkout-pricing-validation-chromium-registered\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\checkout-checkout.register-5e03c-checkout-pricing-validation-chromium-registered\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\checkout-checkout.register-5e03c-checkout-pricing-validation-chromium-registered\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2026-02-25T10:34:12.996Z" hostname="chromium-registered" tests="2" failures="2" skipped="0" time="0.008" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="0.004">
+<failure message="example.spec.ts:3:5 has title" type="FAILURE">
+<![CDATA[  [chromium-registered] › example.spec.ts:3:5 › has title ──────────────────────────────────────────
+
+    Error: Error reading storage state from C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json:
+    ENOENT: no such file or directory, open 'C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\example-has-title-chromium-registered\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\example-has-title-chromium-registered\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\example-has-title-chromium-registered\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="0.004">
+<failure message="example.spec.ts:10:5 get started link" type="FAILURE">
+<![CDATA[  [chromium-registered] › example.spec.ts:10:5 › get started link ──────────────────────────────────
+
+    Error: Error reading storage state from C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json:
+    ENOENT: no such file or directory, open 'C:\Users\ronal\workspace\qaHedgesD-pom\test-assets\storageStates\registered.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\example-get-started-link-chromium-registered\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\example-get-started-link-chromium-registered\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\example-get-started-link-chromium-registered\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

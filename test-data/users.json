@@ -1,0 +1,20 @@
+{
+  "registered": {
+    "email": "jan@itqcommerce.com",
+    "password": "Pass123!",
+    "role": "REGISTERED_USER"
+  },
+  "guest": {
+    "role": "GUEST"
+  },
+  "trade_placeholder": {
+    "email": "trade.user@example.com",
+    "password": "TradePass123!",
+    "role": "TRADE_USER"
+  },
+  "admin_placeholder": {
+    "email": "admin.user@example.com",
+    "password": "AdminPass123!",
+    "role": "ADMIN"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "valid_example": {
+    "code": "EVERGREEN20",
+    "expectedDiscountType": "percentage_or_fixed",
+    "expectedMinDiscount": 0
+  },
+  "invalid_example": {
+    "code": "NOTACODE123"
+  }
+}

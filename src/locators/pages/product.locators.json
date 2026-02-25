@@ -1,0 +1,56 @@
+{
+  "product": {
+    "title": {
+      "primary": "css=h1",
+      "fallbacks": ["css=.page-title span", "css=.product-info-main h1"]
+    },
+    "scientificName": {
+      "primary": "xpath=(//a[contains(.,'Taxus') or contains(.,'Prunus') or contains(.,'Fagus')])[1]",
+      "fallbacks": ["css=.product.attribute.overview + *"]
+    },
+    "price": {
+      "primary": "css=.price-box .price",
+      "fallbacks": ["css=[data-price-type='finalPrice'] .price", "xpath=//*[contains(@class,'price') and contains(.,'£')][1]"]
+    },
+    "wasPrice": {
+      "primary": "xpath=//*[contains(.,'Was:')]/following::*[contains(@class,'price') or contains(.,'£')][1]",
+      "fallbacks": ["css=.old-price .price"]
+    },
+    "stockBadgeOutOfStock": {
+      "primary": "text=/Out of stock/i",
+      "fallbacks": ["css=.stock.unavailable", "xpath=//*[contains(.,'Out of stock')]"]
+    },
+    "qty": {
+      "input": {
+        "primary": "css=input[name='qty']",
+        "fallbacks": ["xpath=//input[contains(@name,'qty')]", "xpath=//input[@type='number' and (contains(@aria-label,'Qty') or contains(@title,'Qty'))]"]
+      },
+      "minus": {
+        "primary": "xpath=//*[contains(.,'Quantity')]/following::*[contains(.,'-')][1]",
+        "fallbacks": ["css=button:has-text('-')"]
+      },
+      "plus": {
+        "primary": "xpath=//*[contains(.,'Quantity')]/following::*[contains(.,'+')][1]",
+        "fallbacks": ["css=button:has-text('+')"]
+      }
+    },
+    "addToCart": {
+      "primary": "role=button[name='Add to Cart']",
+      "fallbacks": ["role=button[name='Add to Basket']", "text=Add to Cart", "text=Add to Basket", "css=button:has-text('Add to')"]
+    },
+    "backInStock": {
+      "emailInput": {
+        "primary": "xpath=//input[@type='email' or contains(@name,'email')][1]",
+        "fallbacks": ["css=input[type='email']"]
+      },
+      "privacyConsent": {
+        "primary": "xpath=//label[contains(.,'Privacy') or contains(.,'personal data')]/preceding::input[@type='checkbox'][1]",
+        "fallbacks": ["css=input[type='checkbox']"]
+      },
+      "submit": {
+        "primary": "role=button[name=/Notify|Submit|Sign up/i]",
+        "fallbacks": ["css=button:has-text('Notify')", "css=button:has-text('Submit')"]
+      }
+    }
+  }
+}

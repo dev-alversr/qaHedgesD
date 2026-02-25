@@ -1,0 +1,30 @@
+{
+  "header": {
+    "logo": {
+      "primary": "role=link[name='Hedges Direct']",
+      "fallbacks": ["css=a[aria-label*='Hedges Direct']", "css=.logo a"]
+    },
+    "search": {
+      "openBtn": {
+        "primary": "role=button[name='Search']",
+        "fallbacks": ["text=Search", "css=button:has-text('Search')"]
+      },
+      "input": {
+        "primary": "role=searchbox",
+        "fallbacks": ["css=input[type='search']", "css=input[name='q']"]
+      },
+      "submit": {
+        "primary": "role=button[name=/Search/i]",
+        "fallbacks": ["css=button[type='submit']"]
+      }
+    },
+    "cartLink": {
+      "primary": "role=link[name=/Cart|Basket/i]",
+      "fallbacks": ["text=Cart", "text=Basket"]
+    },
+    "compareLink": {
+      "primary": "role=link[name=/Compare Products/i]",
+      "fallbacks": ["text=Compare Products"]
+    }
+  }
+}

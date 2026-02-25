@@ -1,0 +1,20 @@
+{
+  "cartSummary": {
+    "discountValue": {
+      "primary": "xpath=//*[contains(.,'Discount:')]/following::*[contains(.,'£')][1]",
+      "fallbacks": ["xpath=//*[contains(.,'Discount')]/following::*[1]"]
+    },
+    "subtotalExDeliveryValue": {
+      "primary": "xpath=//*[contains(.,'Total (exc delivery):')]/following::*[contains(.,'£')][1]",
+      "fallbacks": ["xpath=//*[contains(.,'exc delivery')]/following::*[1]"]
+    },
+    "deliveryFeeValue": {
+      "primary": "xpath=//*[contains(.,'Delivery')]/following::*[contains(.,'£')][1]",
+      "fallbacks": ["xpath=//*[contains(.,'Delivery')]/following::*[1]"]
+    },
+    "grandTotalValue": {
+      "primary": "xpath=//*[contains(.,'Total') and not(contains(.,'exc delivery'))]/following::*[contains(.,'£')][1]",
+      "fallbacks": ["xpath=(//*[contains(.,'£')])[last()]"]
+    }
+  }
+}

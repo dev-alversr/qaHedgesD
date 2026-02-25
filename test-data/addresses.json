@@ -1,0 +1,18 @@
+{
+  "uk_standard": {
+    "firstName": "Jan",
+    "lastName": "Tester",
+    "addressLine1": "1 Garden Walk",
+    "city": "Chorley",
+    "county": "Lancashire",
+    "postcode": "PR7 1NY",
+    "phone": "07123456789",
+    "country": "United Kingdom"
+  },
+  "uk_boundary_short_postcode": {
+    "postcode": "A1 1AA"
+  },
+  "invalid_postcode": {
+    "postcode": "12345"
+  }
+}
